@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 // Cors for cross origin allowance
 app.use(cors());    
 // Initialize the main project folder
-app.use(express.static(__dirname+'/website'));
+app.use(express.static('website'));
 
 // Express Routes
 app.post('/addData',(req,res)=>{
